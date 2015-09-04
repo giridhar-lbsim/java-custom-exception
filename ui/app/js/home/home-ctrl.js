@@ -6,6 +6,6 @@ angular.module( 'home', ['user'] ).config( function( $stateProvider ) {
   } );
 } ).controller( 'HomeCtrl', function( $scope, $state ) {
 
-  console.log("HomeCtrl");
-    $state.go( 'login' );
+  // console.log("HomeCtrl");
+  //   $state.go( 'login' );
 } );

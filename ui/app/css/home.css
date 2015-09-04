@@ -1,0 +1,124 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#nav {
+  background-color: #222;
+}
+
+#nav_wrapper {
+  width: 100%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  min-width: 200px;
+}
+
+#nav ul li {
+  display: inline-block;
+}
+
+#nav ul li:hover {
+  background-color: #333;
+}
+
+#nav ul li a, visited {
+  color: #CCC;
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+}
+
+#nav ul li:hover ul {
+  display: block;
+}
+
+#nav ul ul {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  border: 5px solid #222;
+  border-top: 0;
+  margin-left: -5px;
+}
+
+#nav ul ul li {
+  display: block;
+}
+
+#nav ul ul li a:hover {
+  color: #699;
+}
+
+.logo-box {
+  font-size: 20px;
+  font-weight: 600;
+  color: #83C4FF;
+}
+
+.logo-snap {
+  font-size: 20px;
+  font-weight: 600;
+  color: red;
+}
+
+.baby-box {
+  width: 50%;
+  background-color: #BBBAD0;
+  height: 300px;
+  float: left;
+}
+
+.baby-box1 {
+  width: 50%;
+  background-color: #bdd5c9;
+  height: 300px;
+  float: left;
+}
+
+.baby-box2 {
+  width: 50%;
+  background-color: #dde889;
+  height: 300px;
+  float: left;
+}
+
+.baby-box3 {
+  width: 50%;
+  background-color: #f6b8a3;
+  height: 300px;
+  float: left;
+}
+
+.box-header {
+  color: white;
+  text-transform: uppercase;
+  text-align: center
+}
+
+.box-content {
+  color: #222222;
+  text-align: center;
+}
+
+.buy-btn {
+  text-align: center;
+  background-color: transparent;
+  border: 2px solid #4CA5FF;
+  border-radius: 3em;
+  padding: 10px 15px;
+  color: #4CA5FF;
+}
+
+.text-center {
+  text-align: center;
+}
