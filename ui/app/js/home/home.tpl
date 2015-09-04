@@ -78,7 +78,7 @@
       <h3>Create your own SnapBox as per your needs and we will make sure that  </h3> <h3>the products you need are delivered every month on time.</h3>
     </div>
     <div class="text-center" style="margin-top:80px;">
-      <button class="buy-btn"> Customize SnapBox </button>
+      <button class="buy-btn" ui-sref="customize-snapbox"> Customize SnapBox </button>
     </div>
   </article>
 </section>

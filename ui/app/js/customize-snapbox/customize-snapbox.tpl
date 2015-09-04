@@ -1,0 +1,1 @@
+<div ng-repeat="product in customizeSnapboxCtrl.productList">{{product.title}}</div>
