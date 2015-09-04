@@ -1,0 +1,84 @@
+
+/*login-page start*/
+.snap-login-container {
+  background-color: #1E2832;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.snap-header {
+  text-align: center;
+  font-size: 25px;
+}
+
+.snap-article {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.snap-input {
+  height: 45px;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: transparent;
+  color: inherit;
+  margin-bottom: 10px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  display: block;
+  outline: 0;
+  padding: 0 1em;
+  text-decoration: none;
+  width: 100%;
+}
+.snap-input:focus {
+  height: 45px;
+  border-radius: 5px;
+  font-size: 18px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-color: transparent;
+  color: inherit;
+  margin-bottom: 10px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #51BAA4;
+  border-width: 1px;
+  display: block;
+  outline: 0;
+  padding: 0 1em;
+  text-decoration: none;
+  width: 100%;
+}
+
+.snap-submit-btn {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  border-radius: 2.5em;
+  border: 2px solid #51BAA4;	
+  color: #51BAA4;
+  background-color: transparent;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 700;
+  height: 2.85em;
+  min-width: 10em;
+  padding: 0 1.5em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+/*login-page end*/
