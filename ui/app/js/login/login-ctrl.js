@@ -18,7 +18,7 @@ angular.module( 'login', [] ).config( function( $stateProvider ) {
         toastr.success( "Login Successfully." );
         $state.go('home');
       }else{
-        toastr.success( "User already exists." );
+        toastr.success( "User Not Found" );
       }
       
       
