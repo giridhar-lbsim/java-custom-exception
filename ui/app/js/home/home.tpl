@@ -30,13 +30,16 @@
 <section>
   <article class="baby-box">
     <div class="box-header">
-      <h1>BabyCare SnapBox</h1>
+      <h1>Buy SnapBox</h1>
     </div>
     <div class="box-content">
-      <h3>Surprise every month with a selection of the</h3> <h3> best products for your baby</h3>
+      <h3>Choose from different categories of snapboxes</h3> <h3></h3>
     </div>
-    <div class="text-center" style="margin-top:50px;">
-      <button class="snap-submit-btn"> Buy SnapBox </button>
+    <div class="text-center" style="margin-top:80px;">
+      <button class="buy-btn"> Buy SnapBox </button>
+    </div>
+    <div>
+    	
     </div>
   </article>
 </section>
@@ -48,8 +51,8 @@
     <div class="box-content">
       <h3>Gifting a SnapBox to your dear ones is a great </h3> <h3> way to show love and care.</h3>
     </div>
-    <div class="text-center" style="margin-top:50px;">
-      <button class="snap-submit-btn"> Buy SnapBox </button>
+    <div class="text-center" style="margin-top:80px;">
+      <button class="buy-btn"> Gift SnapBox </button>
     </div>
   </article>
 </section>
@@ -61,8 +64,8 @@
     <div class="box-content">
       <h3>Refer a SnapBox to friends and relatives and Earn reward points </h3> <h3>and discounts on your future subscriptions.</h3>
     </div>
-    <div class="text-center" style="margin-top:50px;">
-      <button class="snap-submit-btn"> Buy SnapBox </button>
+    <div class="text-center" style="margin-top:80px;">
+      <button class="buy-btn"> Refer Now </button>
     </div>
   </article>
 </section>
@@ -74,8 +77,8 @@
     <div class="box-content">
       <h3>Create your own SnapBox as per your needs and we will make sure that  </h3> <h3>the products you need are delivered every month on time.</h3>
     </div>
-    <div class="text-center" style="margin-top:50px;">
-      <button class="snap-submit-btn"> Buy SnapBox </button>
+    <div class="text-center" style="margin-top:80px;">
+      <button class="buy-btn"> Customize SnapBox </button>
     </div>
   </article>
 </section>
