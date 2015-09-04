@@ -33,7 +33,7 @@
       <h1>Buy SnapBox</h1>
     </div>
     <div class="box-content">
-      <h3>Choose from different categories of snapboxes</h3> <h3></h3>
+      <h3>Choose from different categories of snapboxes</h3> <h3><br></h3>
     </div>
     <div class="text-center" style="margin-top:80px;">
       <button class="buy-btn"> Buy SnapBox </button>
