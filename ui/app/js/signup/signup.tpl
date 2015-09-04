@@ -1,4 +1,4 @@
-<div class="div-center">
+<!-- <div class="div-center">
   <div class="form-group center">
     <span class="signin-font-size">Sign Up</span>
   </div>
@@ -22,3 +22,18 @@
     <button class="btn btn-block btn-success">Sign Up</button>
   </form>
 </div>
+ -->
+ <form ng-submit="validateUser(SignupCtrl.user)">
+  <section class="snap-login-container">
+    <article class="snap-article">
+      <h1 class="snap-header">Sign Up</h1>
+      <div>
+        <input class="snap-input " placeholder="Enter Your Email" name="user" type="email" ng-model="loginCtrl.user.email"> </div>
+      <div>
+        <input class="snap-input " placeholder="Your Desired Password" name="pass" type="password" ng-model="loginCtrl.user.password"> </div>
+      <div>
+        <button class="snap-submit-btn" type="submit">Sign Up</button>
+      </div>
+    </article>
+  </section>
+</form>
