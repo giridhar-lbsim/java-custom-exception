@@ -9,7 +9,7 @@ angular.module( 'login', [] ).config( function( $stateProvider ) {
     user: {}
   };
   $scope.validateUser = function( loginDto ) {
-    console.log("email in controller",loginDto.email);
+    console.log("email in",loginDto.email);
     LoginService.findByEmail( loginDto.email ).success( function( response ) {
       $scope.successMessage = response.messages[0];
 
