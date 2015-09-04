@@ -4,28 +4,27 @@ angular.module( 'login', [] ).config( function( $stateProvider ) {
     templateUrl: 'login/login.tpl',
     controller: 'LoginCtrl'
   } );
-} ).controller( 'LoginCtrl', function( $scope, LoginService,$state) {
+} ).controller( 'LoginCtrl', function( $scope, LoginService,$state, $rootScope) {
   $scope.loginCtrl = {
     user: {}
   };
   $scope.validateUser = function( loginDto ) {
-    console.log("email in",loginDto.email);
-    LoginService.findByEmail( loginDto.email ).success( function( response ) {
-      $scope.successMessage = response.messages[0];
+    // console.log("email in",loginDto.email);
+    LoginService.findByEmail( loginDto.email, loginDto.password ).success( function( response ) {
+      console.log("response",response);
 
-      if(response.data && response.success === true){
-        var email = response.data.email;
-        toastr.success( $scope.successMessage );
-        $state.go('user',{id:email});
+      if(response === true){
+        $rootScope.user=loginDto.email;
+        toastr.success( "Login Successfully." );
+        $state.go('home');
+      }else{
+        toastr.success( "User already exists." );
       }
       
       
-    } ).error( function( response ) {
-      $scope.errorMessage = response.messages[0];
-      toastr.error( $scope.errorMessage );
     } );
   };
-  $scope.goToHomePage = function() {
+  /*$scope.goToHomePage = function() {
     $state.go('signup');
-  };
+  };*/
 } );

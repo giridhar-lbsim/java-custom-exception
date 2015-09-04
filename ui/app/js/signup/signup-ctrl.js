@@ -4,31 +4,22 @@ angular.module( 'signup', [] ).config( function( $stateProvider ) {
     templateUrl: 'signup/signup.tpl',
     controller: 'SignupCtrl'
   } );
-} ).controller( 'SignupCtrl', function( $scope, SignupService ) {
+} ).controller( 'SignupCtrl', function( $scope, $state, SignupService, $rootScope ) {
   $scope.SignupCtrl = {
     user: {},
-    genderOptions: [ {
-      label: 'MALE'
-    }, {
-      label: 'FEMALE'
-    } ]
   };
+  console.log("$rootScope.user",$rootScope.user);
   $scope.signUpUser = function( user ) {
-    $scope.userGender = user.gender.label;
-    user.gender = $scope.userGender;
     console.log("in controller");
-    SignupService.signUpUser( user ).success( function( response ) {
-      $scope.sucessMessage = response;
-      console.log("response.data",response);
-      if(response.data){
-        console.log("hi");
-        var email = response.data.email;
-        toastr.success( $scope.successMessage );
-        $state.go('user',{id:email});
+    SignupService.signUpUser( user.email, user.password ).success( function( response ) {
+      console.log("response",response);
+      if(response === true){
+        $rootScope.user = user.email;
+        toastr.success("Signup Successfully.");
+        $state.go('home');
+      }else{
+        toastr.error("User already exists.");
       }
-    } ).error( function( response ) {
-      $scope.errorMessage=response.messages[0];
-      toastr.error($scope.errorMessage);
     } );
   };
 } );
