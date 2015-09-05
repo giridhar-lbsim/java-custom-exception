@@ -122,3 +122,18 @@ body {
 .text-center {
   text-align: center;
 }
+
+.width-30 {
+  width: 30%;
+  float: left;
+}
+
+.width-70 {
+  width: 70%;
+  float: left;
+}
+.list-box{
+  width: 100%;
+  border:2px solid black;
+  height: 250px;
+}

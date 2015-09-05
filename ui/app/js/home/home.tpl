@@ -11,11 +11,11 @@
       <li> <a href="#">Blog</a> </li>
       <li> <a href="#">Boxes</a>
         <ul>
-          <li><a href="#">Babycare Box</a> </li>
-          <li><a href="#">Grooming Box</a> </li>
-          <li><a href="#">Beauty Box</a> </li>
-          <li><a href="#">Groceries Box</a> </li>
-          <li><a href="#">MySnapBox</a> </li>
+          <li><a href="#" ui-sref="buy-snapbox({cat:'babycare'})">Babycare Box</a> </li>
+          <li><a href="#" ui-sref="buy-snapbox({cat:'grooming'})">Grooming Box</a> </li>
+          <li><a href="#" ui-sref="buy-snapbox({cat:'beauty'})">Beauty Box</a> </li>
+          <li><a href="#" ui-sref="buy-snapbox({cat:'groceries'})">Groceries Box</a> </li>
+          <li><a href="#" ui-sref="buy-snapbox({cat:'custom'})">MySnapBox</a> </li>
         </ul>
       </li>
       <li> <a href="#">Contact Us</a> </li>
@@ -36,7 +36,7 @@
       <h3>Choose from different categories of snapboxes</h3> <h3><br></h3>
     </div>
     <div class="text-center" style="margin-top:80px;">
-      <button class="buy-btn"> Buy SnapBox </button>
+      <button class="buy-btn" ui-sref="buy-snapbox"> Buy SnapBox </button>
     </div>
     <div>
     	
