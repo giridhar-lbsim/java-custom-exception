@@ -1,0 +1,22 @@
+#hourlyOffrWrper {
+	margin: 0 auto;
+}
+
+#hourlyOffrWrper ul, #hourlyOffrWrper ul li {
+	display: inline-block;
+	text-align: center;
+	padding: 0;
+	text-align: center;
+}
+
+.box {
+	float: left;
+	border: 2px solid #8AC007;
+	margin-right: 5px;
+	margin-bottom: 5px;
+}
+
+.OffersContentBox {
+	width: 400px;
+	height: 410px;
+}
