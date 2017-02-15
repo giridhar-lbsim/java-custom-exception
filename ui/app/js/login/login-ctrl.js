@@ -11,17 +11,17 @@ angular.module( 'login', [] ).config( function( $stateProvider ) {
   $scope.validateUser = function( loginDto ) {
     console.log("email in controller",loginDto.email);
     LoginService.findByEmail( loginDto.email ).success( function( response ) {
-      $scope.successMessage = response.messages[0];
+      // $scope.successMessage = response.messages[0];
 
       if(response.data && response.success === true){
         var email = response.data.email;
-        toastr.success( $scope.successMessage );
+        // toastr.success( $scope.successMessage );
         $state.go('user',{id:email});
       }
       
       
     } ).error( function( response ) {
-      $scope.errorMessage = response.messages[0];
+      // $scope.errorMessage = response.messages[0];
       toastr.error( $scope.errorMessage );
     } );
   };

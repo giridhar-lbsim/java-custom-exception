@@ -4,7 +4,7 @@ angular.module( 'signup', [] ).config( function( $stateProvider ) {
     templateUrl: 'signup/signup.tpl',
     controller: 'SignupCtrl'
   } );
-} ).controller( 'SignupCtrl', function( $scope, SignupService ) {
+} ).controller( 'SignupCtrl', function( $state,$scope, SignupService ) {
   $scope.SignupCtrl = {
     user: {},
     genderOptions: [ {

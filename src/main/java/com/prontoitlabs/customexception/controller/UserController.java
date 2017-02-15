@@ -1,6 +1,7 @@
-package com.prontoitlabs.customexception.controller;
+  package com.prontoitlabs.customexception.controller;
 
-import org.apache.log4j.Logger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -21,7 +22,8 @@ import com.prontoitlabs.customexception.util.RestResponse;
 @RequestMapping(value = "/user")
 public class UserController {
 
-  private static final Logger LOGGER = Logger.getLogger("UserController");
+//  private static final Logger LOGGER = Logger.getLogger("UserController");
+  private static final Logger LOGGER = LoggerFactory.getLogger(UserController.class);
   @Autowired
   private UserService userService;
 
@@ -32,10 +34,12 @@ public class UserController {
     return new ResponseEntity<RestResponse>(new RestResponse(Boolean.TRUE, "Succesfully Signed Up!", userService.save(user)), HttpStatus.OK);
   }
 
-  @RequestMapping(value = "/findby-email", method = RequestMethod.POST)
+  @RequestMapping(value = "/id", method = RequestMethod.GET)
   @ResponseBody
   public ResponseEntity<RestResponse> findByEMail(@RequestParam String email) throws UserNotFoundException {
     LOGGER.info("User id to find is: "+email);
-    return new ResponseEntity<RestResponse>(new RestResponse(Boolean.TRUE, "Succesfully Logged In!", userService.findByEmailId(email)), HttpStatus.OK);
+    LOGGER.error("User id to find is: "+email);
+    LOGGER.debug("User id to find is: "+email);
+    return new ResponseEntity<RestResponse>(new RestResponse(Boolean.TRUE, "SUCCESS!", userService.findByEmailId(email)), HttpStatus.OK);
   }
 }
